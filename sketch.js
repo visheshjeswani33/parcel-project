@@ -38,14 +38,18 @@
  ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
  World.add(world, ground);
 
- bar = Bodies.rectangle(300, 600, 10, 100, {isStatic:true});
+ bar = Bodies.rectangle(300, 570, 10, 100, {isStatic:true});
  World.add(world, bar);
 
- bar1 = Bodies.rectangle(500, 600, 10, 100, {isStatic:true});
+ bar1 = Bodies.rectangle(500, 570, 10, 100, {isStatic:true});
  World.add(world, bar1);
 
- bar2 = Bodies.rectangle(395, 645, 200, 10, {isStatic:true});
+ bar2 = Bodies.rectangle(395, 615, 200, 10, {isStatic:true});
  World.add(world, bar2);
+
+ bar3 = Bodies.rectangle(400, 600, 180, 10, {isStatic:true});
+ World.add(world, bar3);
+ bar3.visible = false
 
  Engine.run(engine);
   
@@ -60,6 +64,8 @@
  rect(bar.position.x, bar.position.y, 10, 100);
  rect(bar1.position.x, bar1.position.y, 10, 100);
  rect(bar2.position.x, bar2.position.y, 200, 10);
+ fill("black")
+ rect(bar3.position.x, bar3.position.y, 180, 10);
 
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
